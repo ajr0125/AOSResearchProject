@@ -27,85 +27,40 @@
 								</header>
 
 							<!-- Content -->
-								<section>
-									<header class="main">
-										<h2>Project Summary</h2>
-									</header>
-
-									<!-- Content -->
-									
-								
-										<p>Radar detection CFAR algorithms based on ordered statistics have shown a potential for significant performance improvement. This research project focuses on developing a novel algorithm prototype in MATLAB based on CFAR concepts using advanced ordered statistics methods discussed in research papers about the First of Difference CFAR (FOD-CFAR) and the OSVI-CFAR (Ordered Statistics Variability Index CFAR) to obtain the best noise mean estimate to detect targets while minimizing detection of noise and clutter. </p>
-	
-
-									
-
-									<!-- Elements -->
-										<div class="row gtr-200">
-											<div class="col-6 col-12-medium">
-											<div class="col-6 col-12-medium">
-
-
-
-
-
-</code></pre>
-
-											</div>
-										</div>
-
-								</section>
+							
 <!-- Section -->
 <section>
-	
-	<div class="posts">
-		<article>
-			<a href="#" class="image"><img src="images/FODPic.png" alt="" /></a>
-			<h3>What is the FOD-CFAR?</h3>
-			<p>The FOD-CFAR estimates the number of the noise samples and interference samples in the reference window by looking for large differences between adjacent ordered noise samples as an indicator of a transition from homogenous to non-homogeneous environment. Inteferers are a type of unwanted radio energy that complicate the process of calculating the noise mean estimate. Non-homogeneous data typically contains interferers, while homogeneous, or normally distributed, data does not. Thus, the FOD-CFAR attempts to identify and throw away these interferers so a precise noise mean estimate can be calculated. Shown above are examples of homogeneous (left) and non-homogeneous data (right). The spikes in the non-homogeneous data are the interferers.</p>
-			<ul class="actions">
-				
-			</ul>
-		</article>
-		<article>
-			<a href="#" class="image"><img src="images/OSVIPic.png" alt="" /></a>
-			<h3>What is the OSVI-CFAR?</h3>
-			<p>The OSVI-CFAR detector determines the noise mean estimate from ordered data samples and processes the data differently depending on its distribution. This detector also calculates two variables called the Variability Index (VI) and the Mean Ratio (MR) help to establish how the noise data should be processed. Essentially, the OSVI-CFAR uses a different algorithm, for instance a CA-CFAR or a GO-CFAR, depending on the noise data. For example, if the noise data is normally distrubted, the OSVI-CFAR would apply a traditional CA-CFAR, which just averages all the samples, to obtain the noise mean estimate.</p>
-			<ul class="actions">
-			</ul>
-		</article>
-		<article>
-			<a href="#" class="image"><img src="images/Methodology.png" alt="" /></a>
-			<h3>Methodology</h3>
-			<p>Shown above is a description of the methodology for this project. Gaussian noise data is essentially just the generation of the noise samples the prototype will be applied to. Swerling I and I models are used to generate signals. So, the noise and signal data will then be combined, and the prototype's performance will be tested on its ability to detect the signals and ignore the noise.</p>
-			<ul class="actions">
-				
-			</ul>
-		</article>
-		<article>
-			<a href="#" class="image"><img src="images/Picture1.png" alt="" /></a>
-			<h3>Important Terms</h3>
-			<p>Probability of detection is the probability that a system correctly detects a target. SNR, or signal-to-noise ratio, is the ratio of a given signal to its corresponding noise mean estimate. The larger the SNR, the higher the signal amplitude is compared to the noise, meaning that it is easier to detect. Finally, probability of false alarm is how often a system incorrectly detects a target, or mistakes noise for a target. Probability of false alarm is preestablished as the goal for the system and is the value the entire system is based on. Thus, the ultimate goal of a Radar system is the maximize Probality of detection for a given Probability of false alarm.</p>
-			<ul class="actions">
-			</ul>
-		</article>
-		<article>
-			<a href="#" class="image"><img src="images/SNRPD.png" alt="" /></a>
-			<h3>Evaluation of Prototype Performance</h3>
-			<p>The performance of the prototype Radar algorithm developed in this project will be evaluated using SNR vs PD curves. These graphs show the probability of detection for corresponding SNRs of different signals. Shown above is the traditional shape of an SNR vs PD curve, which makes logical sense. A signal with a lower SNR has an amplitude that is closer to the noise amplitude, which makes it harder to detect, resulting in a lower PD. On the other hand, a signal with a higher SNR has an amplitude further above the noise amplitude, making it easier to detect and increasing PD. As shown when comparing the two curves in the above image, the black curve clearly has a higher performance, as for each SNR, the algorithm represented by the black curve has a higher PD that the algorithm represented by the red curve. The same logic will be applied when comparing the performance of the prototype algorithm to other traditional algorithms like the CA-CFAR, GO-CFAR and SO-CFAR.</p>
-			<ul class="actions">
-				
-			</ul>
-		</article>
-		<article>
-			<a href="#" class="image"><img src="" alt="" /></a>
-			<h3></h3>
-			<p></p>
-			<ul class="actions">
-			</ul>
-		</article>
-		
-	</div>
+	<header class="main">
+		<h2>Project Summary</h2>
+	</header>
+	<span class="image main"><img src="images/ProjectSummaryPic.png" alt="" /></span>
+
+		<p>Radar detection CFAR algorithms based on ordered statistics have shown a potential for significant performance improvement. This research project focuses on developing a novel algorithm prototype in MATLAB based on CFAR concepts using advanced ordered statistics methods discussed in research papers about the First of Difference CFAR (FOD-CFAR) and the OSVI-CFAR (Ordered Statistics Variability Index CFAR) to obtain the best noise mean estimate to detect targets while minimizing detection of noise and clutter.</p>
+
+		<hr class="major" />
+		<img src="images/FODPic.png" style="width:360px;height:100px;" alt="" />
+		<h2>What is the FOD-CFAR?</h2>
+		<p>The FOD-CFAR estimates the number of the noise samples and interference samples in the reference window by looking for large differences between adjacent ordered noise samples as an indicator of a transition from homogenous to non-homogeneous environment. Inteferers are a type of unwanted radio energy that complicate the process of calculating the noise mean estimate. Non-homogeneous data typically contains interferers, while homogeneous, or normally distributed, data does not. Thus, the FOD-CFAR attempts to identify and throw away these interferers so a precise noise mean estimate can be calculated. Shown above are examples of homogeneous (left) and non-homogeneous data (right). The spikes in the non-homogeneous data are the interferers.</p>
+
+		<hr class="major" />
+		<img src="images/OSVIPic.png" style="width:560px;height:200px;" alt="" />
+		<h2>What is the OSVI-CFAR?</h2>
+		<p>The OSVI-CFAR detector determines the noise mean estimate from ordered data samples and processes the data differently depending on its distribution. This detector also calculates two variables called the Variability Index (VI) and the Mean Ratio (MR) help to establish how the noise data should be processed. Essentially, the OSVI-CFAR uses a different algorithm, for instance a CA-CFAR or a GO-CFAR, depending on the noise data. For example, if the noise data is normally distrubted, the OSVI-CFAR would apply a traditional CA-CFAR, which just averages all the samples, to obtain the noise mean estimate.</p>
+
+		<hr class="major" />
+
+		<h2>Methodology</h2>
+		<img src="images/Methodology.png" style="width:560px;height:200px;" alt="" />
+		<p>Shown above is a description of the methodology for this project. Gaussian noise data is essentially just the generation of the noise samples the prototype will be applied to. Swerling I and I models are used to generate signals. So, the noise and signal data will then be combined, and the prototype's performance will be tested on its ability to detect the signals and ignore the noise.</p>
+
+		<hr class="major" />
+
+		<h2>Important Terms</h2>
+		<img src="images/Picture1.png" style="width:560px;height:200px;" alt="" />
+		<p>Probability of detection is the probability that a system correctly detects a target. SNR, or signal-to-noise ratio, is the ratio of a given signal to its corresponding noise mean estimate. The larger the SNR, the higher the signal amplitude is compared to the noise, meaning that it is easier to detect. Finally, probability of false alarm is how often a system incorrectly detects a target, or mistakes noise for a target. Probability of false alarm is preestablished as the goal for the system and is the value the entire system is based on. Thus, the ultimate goal of a Radar system is the maximize Probality of detection for a given Probability of false alarm.</p>
+
+
+
 </section>
 						</div>
 					</div>
@@ -125,11 +80,17 @@
 									<ul>
 										<li><a href="index.html">Home</a></li>
 										<li><a href="abstract.html">Abstract</a></li>
-										<li><a href="elements.html">Background</a></li>
-										<li><a href="projectsummary.html">Project Summary</a></li>
+										<li>
+											<span class="opener">Background</span>
+											<ul>
+												<li><a href="elements.html">Overview</a></li>
+												<li><a href="conferences.html">Conferences</a></li>
+												<li><a href="#">Research Articles</a></li>
+											</ul>
+										</li>										<li><a href="projectsummary.html">Project Summary</a></li>
 										<li><a href="collaboration.html">Global Research collaboration</a></li>
-										<li><a href="#">Results</a></li>
-										<li><a href="#">Code</a></li>
+										<li><a href="results.html">Results</a></li>
+										<li><a href="code.html">Code</a></li>
 										<li><a href="about.html">About</a></li>
 									</ul>
 								</nav>
