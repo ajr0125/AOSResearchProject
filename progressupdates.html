@@ -34,17 +34,26 @@
 		<h2>Progress Updates</h2>
 	</header>
 		<hr class="major" />
+		<h3>Progress Update #9 (January 1st, 2021): Finalizing FOD-CFAR and Semester Presentation</h3>
+		<p>I made the final edits to the FOD-CFAR, primarily for efficiency purposes, and started to further develop the OSVI-CFAR. I also presented my research project to a general audience at the Academy of Science, specifically to some teachers and a few of my peers. I summarized background, the project itself, current progress, and goals looking forward. Links to the video presentation and the corresponding slides can be found below. I also continued working with my research partners in Korea on our collaboration project. Lastly, I reached out to additional scientists (Wen Jiang, Kathleen Wage and Jill Nelson) to get additional insight for my project. Details are in the Conferences menu item of the website.</p>
+		<a href="https://www.youtube.com/watch?v=uf7KMETuqjc" target="_blank">Semester Presentation Video</a>
+		<br><a href="https://docs.google.com/presentation/d/1OLKJVAE_m4sNBknbwRhwDahy1pk-bSjo/edit?usp=sharing&ouid=103242115034166790775&rtpof=true&sd=true" target="_blank">Semester Presentation Slidedeck</a>
+		
+		<hr class="major" />
 		<h3>Progress Update #8 (December 1st, 2021): Further Development of the FOD-CFAR</h3>
-		<p>Primarily focusing on the FOD-CFAR this month, I developed the tools I needed to replicate the results seen in the research paper describing this algorithm. Specifically, I learned how to generate noise data that contains interferers, which are spikes of loud noise that can throw off detections, as the FOD-CFAR was designed to perform in interferer environments. I then used this knowledge to learn how to generate clutter edge environments, which is just noise data that contains a wall of consecutive interferers that can also throw off detection. By creating functions to generate these environments, I was able to replicate the results of the research paper describing the FOD-CFAR.</p>
+		<p>Primarily focusing on the FOD-CFAR this month, I developed the tools I needed to replicate the results seen in the research paper describing this algorithm. Specifically, I learned how to generate noise data that contains interferers, which are spikes of loud noise that can throw off detections, as the FOD-CFAR was designed to perform in interferer environments. I then used this knowledge to learn how to generate clutter edge environments, which is just noise data that contains a wall of consecutive interferers that can also throw off detection. By creating functions to generate these environments, I was able to replicate the results of the research paper describing the FOD-CFAR. Shown below is an example of this replication of results.</p>
+		<img src="images/FODComparisonGraph.png" style="width:560px;height:500px;" alt="" />
 
 		<hr class="major" />
 		<h3>Progress Update #7 (November 1st, 2021): FOD-CFAR and OSVI-CFAR Initial Development</h3>
-		<p>While continuing to develop other algorithms for eventual performance comparison, I started to research in much more detail my project's primary algorithms: the FOD-CFAR and the OSVI-CFAR. After researching, I started taking initial steps towards developing these algorithms by starting with threshold computations, as well as outlining the inner workings of the algorithms conceptually with pseudocode.</p>
+		<p>While continuing to develop other algorithms for eventual performance comparison, I started to research in much more detail my project's primary algorithms: the FOD-CFAR and the OSVI-CFAR. After researching, I started taking initial steps towards developing these algorithms by starting with threshold computations, as well as outlining the inner workings of the algorithms conceptually with pseudocode. Shown below is a performance evaluation of the CA-CFAR, one of the algorithms I developed for performance comparison against my prototype.</p>
+		<img src="images/CACFARGraph.png" style="width:560px;height:500px;" alt="" />
 
 		<hr class="major" />
-		<h3>Progress Update #6 (October 1st, 2021): Developing Algorithms for Performance Comparison</h3>
-		<p>Using the knowledge I gained from the previous month, I started to develop the different CFAR algorithms that I researched in MatLab, specifically the CA-CFAR, GO-CFAR, SO-CFAR, and CMLD-CFAR. Since the papers only described the algorithms conceptually, I had to use the threshold formulas provided to develop the algorithms from scratch. Then, I would attempt to replicate the results of the paper for confirmation that I programmed the algorithm correctly. The development of these algorithms lasted for the rest of October.</p>
-		
+		<h3>Progress Update #6 (October 1st, 2021): Data Generation and Developing Algorithms for Performance Comparison</h3>
+		<p>Using the knowledge I gained from the previous month, I created functions for generating my signal and noise data. I also started to develop the different CFAR algorithms that I researched in MatLab, specifically the CA-CFAR, GO-CFAR, SO-CFAR, and CMLD-CFAR. Since the papers only described the algorithms conceptually, I had to use the threshold formulas provided to develop the algorithms from scratch. Then, I would attempt to replicate the results of the paper for confirmation that I programmed the algorithm correctly. The development of these algorithms lasted for the rest of October. Shown below is a sample of one trial of generated noise data.</p>
+		<img src="images/NoiseData.png" style="width:560px;height:500px;" alt="" />
+
 		<hr class="major" />
 		<h3>Progress Update #5 (September 7th, 2021): Global Research Collaboration Program </h3>
 		<p>My research project was selected for participation in the AOS Global Research Collaboration Program with the South Korean students of Daegu Science High School. We introduced our projects to each other and collaborated to develop a combined research proposal that we presented to the Academy of Science and Daegu Science High School faculty on October 25, 2021. Now, we plan to continue moving forward with our collaboration by meeting every two to three weeks on zoom to share progress status and updates. </p>
