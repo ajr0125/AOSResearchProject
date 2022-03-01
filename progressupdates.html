@@ -29,12 +29,24 @@
 							<!-- Content -->
 							
 <!-- Section -->
+
 <section>
 	<header class="main">
 		<h2>Progress Updates</h2>
 	</header>
 		<hr class="major" />
-		<h3>Progress Update #9 (January 1st, 2021): Finalizing FOD-CFAR and Semester Presentation</h3>
+		<h3>Progress Update #11 (February 14st, 2022): Developing a Area-based Method of Performance Evaluation</h3>
+		<p>I  developed a new method of evaluation that  quantifies the performance of an algorithm with a value from 0 to 1. First, the optimal curve in green is essentially the best case scenario for an algorithm’s performance, so the goal is for an algorithm to get as close to the optimal as possible. So, for my evaluation method, I used area under the curve calculations to output what portion of the graph of the optimal curve is also covered by the curve of a given algorithm. I’m using area to quantify how close a certain algorithm is to the optimal curve. So, from this, we obtained three values for the respective algorithms shown below. Overall, with this new method of evaluation, it is easier to understand and compare algorithm performances. Once I develop my prototype, I can use this area-based performance evaluation to easily compare my prototype’s performance to that of other algorithms.</p>
+		<img src="images/AreaMethodPic.png" style="width:600px;height:300px;" alt="" />
+
+		<hr class="major" />
+		<h3>Progress Update #10 (February 1st, 2022): Finalizing OSVI-CFAR and Beginning Prototype Implementation</h3>
+		<p>I was able to implement and replicate the results for the OSVI-CFAR and start implementing my radar detection prototype which combines the two. Shown below is a performance evaluation graph of the OSVI-CFAR compared to the CA-CFAR and the GO-CFAR in an environment with 2 interferers. The prototype is going to be a sequential implementation of the FOD and OSVI CFARS. Running a portion of the FOD-CFAR will identify what noise data sample marks the boundary between homogeneous and non-homogeneous data. Then, the index, or location, of this boundary will be inputted into the OSVI-CFAR as the kth ordered index value. This k value essentially identifies the index of the noise sample that will be used as the noise mean estimate. For instance, if a certain set of data with 36 samples is inputted into the algorithm, and the FOD-CFAR identifies the boundary between the homogeneous and non-homogeneous data at the 20th sample, this index of 20 will be inputted into the OSVI-CFAR as the k value, where the value of this 20th noise sample will be used to establish a reliable noise mean estimate and thus threshold that isn’t corrupted by any interference, allowing for a high detection performance. Essentially, the boundary established by the FOD-CFAR helps to select a k value that isn’t interference, allowing for a dependable noise mean estimate and threshold to be established. A flowchart outlining the prototype is shown below the graph.</p>
+		<img src="images/OSVIComparisonGraph.png" style="width:560px;height:500px;" alt="" />
+		<img src="images/PrototypeOutline.png" style="width:600px;height:200px;" alt="" />
+
+		<hr class="major" />
+		<h3>Progress Update #9 (January 1st, 2022): Finalizing FOD-CFAR and Semester Presentation</h3>
 		<p>I made the final edits to the FOD-CFAR, primarily for efficiency purposes, and started to further develop the OSVI-CFAR. I also presented my research project to a general audience at the Academy of Science, specifically to some teachers and a few of my peers. I summarized background, the project itself, current progress, and goals looking forward. Links to the video presentation and the corresponding slides can be found below. I also continued working with my research partners in Korea on our collaboration project. Lastly, I reached out to additional scientists (Wen Jiang, Kathleen Wage and Jill Nelson) to get additional insight for my project. Details are in the Conferences menu item of the website.</p>
 		<a href="https://www.youtube.com/watch?v=uf7KMETuqjc" target="_blank">Semester Presentation Video</a>
 		<br><a href="https://docs.google.com/presentation/d/1OLKJVAE_m4sNBknbwRhwDahy1pk-bSjo/edit?usp=sharing&ouid=103242115034166790775&rtpof=true&sd=true" target="_blank">Semester Presentation Slidedeck</a>
