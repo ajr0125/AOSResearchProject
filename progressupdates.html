@@ -35,6 +35,15 @@
 		<h2>Progress Updates</h2>
 	</header>
 		<hr class="major" />
+		<h3>Progress Update #14 (May 1st, 2022): Completed Prototype Implementation and Performance Evaluation</h3>
+		<p>I completed the implementation of my radar detection prototype and evaluated its performance in numerous interfer environments compared to the FOD-CFAR, OSVI-CFAR, CA-CFAR, and GO-CFAR. I also evaluated the prototype's performance in a clutter edge environment (See Results). In addition to the outputted plots, I used my area-based evaluation method to output the performance of each algorithm in each case on a 0 to 1 scale.</p>
+		<br><a href="results.html" target="_blank">Results</a>
+
+		<hr class="major" />
+		<h3>Progress Update #13 (April 1st, 2022): Prototype Implementation</h3>
+		<p>After establishing the new outline for my Radar Detection Prototype, now named the Clutter Mitigated First Order Difference CFAR, or CM-FOD-CFAR, I began the implementation of the prototype.</p>
+
+		<hr class="major" />
 		<h3>Progress Update #12 (March 1st, 2022): Revised Outline of Prototype and Initial Implementation</h3>
 		<p>After beginning the implementation of my prototype, I realized a few flaws in my prototype outline. The main flaw was that while the FOD-CFAR established a boundary based on all of the data given, there are some cases in the OSVI-CFAR where only half the noise data is used to establish the noise mean estimate, thus there could be situations where the boundary established by the FOD-CFAR could be at an index larger than the size of data used in the OSVI-CFAR. So, I revised my prototype outline as shown below. First, the OSVI-CFAR will determine the enivironment, or distribution, of the noise data and identify what portion of the data should be used in the noise mean estimate calculations. This portion of the data will be inputted into the FOD-CFAR, where the boundary between homogeneous and non-homogeneous data for that specific data will be established. This boundary will then be used in the OSVI-CFAR as the kth ordered index value to establish the noise mean estimate and thus a threshold that can be used to evaluate detection performance. I finally began the initial implementation of this revised prototype.</p>
 		<img src="images/NewOutline.png" style="width:800px;height:300px;" alt="" />
